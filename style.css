@@ -660,6 +660,7 @@ a{
 
           .mainColumns .flexCol{
             width: 33%;
+            border-left: 1px solid white;
           }
 
           .iconBox .flexCol{
