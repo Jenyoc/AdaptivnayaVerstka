@@ -1,0 +1,740 @@
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video,button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  font-family: Ebrima;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+@font-face {
+  font-family: GothamNarrow;
+  src: url(fonts/GothamNarrow.ttf);
+}
+
+/*Basic*/
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/*Header*/
+
+.mainBackgroundPic{
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  filter: blur(3px) grayscale(30%) brightness(70%);
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  color: white;
+}
+
+.headerRight{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.signUpBtn {
+  display: flex;
+  background: #83d3c9;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+  outline: none;
+}
+
+.signUpBtn:hover{
+  cursor: pointer;
+  background: #91ece1;
+  transition: 0.5s;
+}
+
+/* Banner */
+
+.bannerBox{
+  display: flex;
+  width: 100%;  height: 600px;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.banner{
+  display: flex;
+  width: 400px; height: 500px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.50);
+  color: white;
+  border: white;
+}
+
+.bannerHeader{
+  font-size: 2.3rem;
+  border-top: 6px double;
+  border-bottom: 6px double;
+  text-align: center;
+  padding: 50px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.bannerText{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.moreInfoBtn{
+  width: 100%; height: 20%;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+  outline: none;
+}
+
+.moreInfoBtn:hover{
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.30);
+  transition: 0.5s;
+}
+
+.main{
+  background-color: rgb(229, 229, 244);
+  height: 2000px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #373737;
+  font-family: GothamNarrow;
+}
+
+.fa{
+  margin: 5px;
+  font-size: 5rem;
+  color: #ededed;
+}
+
+.fa-list-ul, .fa-check{
+  margin: auto;
+  color: #cecece;
+}
+
+.mainHeader{
+  font-size: 2rem;
+}
+
+.mainText{
+  font-size: 2rem;
+  padding: 40px;
+  width: 1200px;
+  margin: auto;
+}
+
+.iconBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.inner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #83d3c9;
+  margin: auto;
+  padding: 30px;
+  width: 1200px; height: 350px;
+  color: white;
+}
+
+.flexCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.innerHeader{
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.innerText{
+  font-size: 1.5rem;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.mainColumns{
+  width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.columnsHeader{
+  font-size: 2rem;
+  margin: 40px
+}
+
+.columnsText{
+  margin: 40px;
+}
+
+.catWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1200px;
+  background: white;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.catWrapper .flexCol{
+  margin: 0 25px;
+  align-items: center;
+}
+
+.catBox{
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  flex-flow: wrap;
+  margin: 25px 0;
+}
+
+.catsHeader{
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 40px 25px 25px ;
+  background: white;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.cat{
+  display: flex;
+  width: 400px; height: auto;
+  transition: 0.5s;
+}
+
+.cat:hover{
+  transform: rotate(15deg) scale(1.5, 1.5);
+  transition: 0.5s;
+}
+
+.catText{
+  text-align: center;
+  margin: 0 auto 40px auto;
+}
+
+.mainBottomBtn{
+  background: transparent;
+  width: 300px; height: 50px;
+  border: 1px solid #5c5c5c;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 40px auto;
+  color: #5c5c5c;
+  outline: none;
+}
+
+.mainBottomBtn:hover{
+  cursor: pointer;
+}
+
+/*footer*/
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerTop{
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  height: 400px;
+  justify-content: center;
+  width: 1200px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+.footerBtnBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footerHeader{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 25px;
+}
+
+.footerText{
+  margin: 15px;
+}
+
+.footerBtn{
+  width: 300px;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  outline: none;
+}
+
+.leftBtn{
+  background: #83d3c9;
+  transition: 0.5s;
+}
+
+.leftBtn:hover{
+  background: #91ece1;
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+}
+
+.rightBtn{
+  background: transparent;
+  border: 1px solid white;
+  transition: 0.5s;
+  outline: none;
+}
+
+.rightBtn:hover{
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+  cursor: pointer;
+  outline: none;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: #9b9b9b;
+}
+
+.footerBox{
+  display: flex;
+  justify-content: space-around;
+  width: 1200px;
+  padding: 40px;
+}
+
+.leftText, .rightText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.leftHeader{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.fccLink{
+  color: black;
+}
+
+.footerIco{
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.footerIco:hover{
+  background: white;
+  transition: 1s;
+}
+
+@media (max-width: 1100px) {
+  .bannerBox{
+    height: 300px;
+  }
+
+  .banner{
+    background: none;
+    transition: 0.5s;
+    width: 90%; height: 90%;
+    padding: 10px;
+  }
+
+  .mainBackgroundPic{
+    width: 1100px;
+  }
+
+  body{
+    overflow: scroll;
+  }
+
+  .bannerHeader{
+    display: flex;
+    width: 400px; height: 100px;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .moreInfoBtn{
+    width: 200px; height: 50px;
+  }
+
+  .headerRight{
+    width: auto;
+    justify-content: center;
+  }
+
+  .signUpBtn{
+    margin-left: 10px;
+  }
+
+  .mainText, .inner, .mainColumns, .catWrapper, .footerTop, .catsHeader{
+    width: 900px;
+  }
+
+  .columnsHeader{
+    font-size: 1rem;
+  }
+  @media (max-width: 900px){
+    .mainText, .inner, .mainColumns, .catWrapper, .footerTop, .catsHeader{
+      width: 100%;
+    }
+    .catWrapper{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .catBox{
+      width: 500px; height: 300px;
+    }
+    .cat{
+      width: 500px; height: 300px;
+    }
+
+    .main{
+      height: auto;
+    }
+
+    .columnsHeader, .columnsText{
+      margin: 20px 10px;
+    }
+
+    .fa-list-ul::before{
+      display: none;
+    }
+
+    .mainHeader{
+      margin-top:40px;
+    }
+
+    .mainText{
+      font-size: 1.2rem;
+    }
+    @media (max-width: 600px){
+      .innerHeader{
+        font-size: 1.5rem;
+      }
+      .innerText{
+        font-size: 1rem;
+      }
+      .iconBox{
+        font-size: 0.1rem;
+      }
+      .columnsHeader{
+        font-size: 0.8rem;
+      }
+      .columnsText{
+        font-size: 0.8rem;
+      }
+      @media (max-width: 520px){
+        .inner{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .iconBox{
+          flex-direction: column;
+          width: 100%;
+          margin: 20px 0;
+        }
+
+        .iconBox .flexCol{
+          flex-direction: row;
+          width: 100%;
+          padding: 20px;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        .iconBox .fa::before{
+          display: flex;
+          font-size: 3rem;
+          text-align: center;
+        }
+
+        .iconBox i{
+          width: 80px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .innerHeader{
+          text-align: center;
+        }
+
+        .innerText{
+          text-align: center;
+          margin: 10px 0;
+        }
+
+        .catBox{
+          width: 100%; height: 20%;
+          min-height: 200px;
+          max-height: 20%;
+          margin: 0;
+        }
+
+        .cat{
+          width: 100%; height: 100%;
+        }
+
+        .catWrapper .flexCol{
+          margin: 0;
+        }
+
+        .footerBtnBox{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .mainColumns{
+          padding: 10px 0;
+        }
+
+        .mainColumns i{
+          font-size: 2rem;
+        }
+
+        .mainColumns .flexCol{
+          width: 100px;
+        }
+
+        .columnsHeader{
+          margin: 10px 0;
+          font-size: 0.7rem;
+        }
+        @media (max-width: 430px){
+          .header{
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0;
+            height: 130px;
+          }
+          .headerRight{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            width: 100%;
+          }
+
+          .banner{
+            padding: 0;
+          }
+
+          .bannerHeader{
+            width: 100%;
+          }
+
+          .mainColumns{
+            padding: 0;
+          }
+
+          .columnsText{
+            margin: 0;
+            font-size: 0.7rem;
+          }
+
+          .inner{
+            padding: 0;
+          }
+
+          .mainColumns .flexCol{
+            width: 33%;
+          }
+
+          .iconBox .flexCol{
+            padding: 0;
+          }
+
+          .catsHeader{
+            padding: 0;
+          }
+
+          .mainBottomBtn{
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          .mainHeader{
+            font-size: 1.3rem;
+            margin-top: 10px;
+          }
+
+          .innerHeader{
+            font-size: 1.3rem;
+          }
+
+          .mainText{
+            padding: 10px;
+            font-size: 1rem;
+          }
+
+          .mainColumns{
+            padding: 10px 0;
+          }
+
+          .catsHeader{
+            font-size: 1.5rem;
+            padding: 10px;
+          }
+
+          .catsHeader img{
+            width: 20px; height: 20px;
+          }
+
+          .footerBtn{
+            width: 100%;
+            box-sizing: border-box;
+          }
+
+          .footerHeader{
+            font-size: 1.3rem;
+          }
+
+          .footerBox{
+            flex-direction: column;
+            padding: 10px;
+          }
+
+          .leftHeader{
+            margin: 10px;
+          }
+
+          .leftText{
+            margin: 10px;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .rightHeader{
+            margin: 10px;
+          }
+
+          .rightText{
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
